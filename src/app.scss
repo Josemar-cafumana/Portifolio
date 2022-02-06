@@ -92,7 +92,11 @@ html{
 
 
 
-
+@keyframes menu
+{
+from {clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);}
+to {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);;}
+}
 
 
 
@@ -112,7 +116,20 @@ html{
       transform: translate(-50%,-50%) !important;
 }
 .navbar .navbar-nav{
-  background-color: transparent;
+  position: absolute;
+  background: rgba($color: #151515, $alpha: 1);
+  z-index: 999;
+  right: -30%;
+  top: 100%;
+  padding-right: 14rem;
+  width: 100%;
+  height: 90vh;
+  text-align: end;
+  animation: menu .3s ease;
+
+  .nav-link{
+    padding: 2rem 0;
+  }
 }
 
 

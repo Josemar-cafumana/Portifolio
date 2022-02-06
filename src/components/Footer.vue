@@ -19,7 +19,11 @@ export default {
 
         p{
              font-size: var(--font-size);
-                          color: var(--gray-light);
+            color: var(--gray-light);
+
+            img{
+                width: 2rem;
+            }
                    
         }
     }
