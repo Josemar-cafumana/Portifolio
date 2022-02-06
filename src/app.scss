@@ -64,7 +64,7 @@
   border-image-slice: 1;
 }
 section{
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   background: var(--dark-200);
 }
 html{
@@ -111,9 +111,20 @@ html{
       left:50% !important;
       transform: translate(-50%,-50%) !important;
 }
+.navbar .navbar-nav{
+  background-color: red;
+}
 
 
 }
+@media (max-width:767px){
+.sobre-mim .sobre{
+  margin-top: 2rem;
+  justify-content: center !important;
+}
+  section{text-align: center;}
+}
+
 
 @media (max-width:450px){
   html{
@@ -121,12 +132,7 @@ html{
   }
   
 }
-@media (max-width:680px){
-  html{
-      font-size: 50%;
-  }
 
 
 
   
-}
