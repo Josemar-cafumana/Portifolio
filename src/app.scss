@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --primary: #00D2DF;
+  --gradient-pink:  linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+  --gradient-purple: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
+  --dark: #121212;
+  --dark-200: #151515;
+  --gray-light: #c4c4c4;
+  --white: #fff;
+
+  --font-size:  1.5rem;
+  --font-size-1: 6rem;
+  --font-size-2: 4rem;
+  --font-size-3: 2.3rem;
+  --font-size-4: 1.9rem;
+
+}
+
+*{
+  padding:0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  transition: all .2s linear;
+}
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax($val,1fr));
+    gap:2rem;
+}
+.btn-gradient-pink
+,.btn-gradient-purple{
+   padding: 1rem 2.5rem;
+   width: 10rem;
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+      border: .2rem solid transparent;
+      border-image: var(--gradient-purple);
+      border-image-slice: 1;
+      text-align: center;
+      position: relative;
+      
+    
+
+      &:hover{
+        color: var(--white);
+      }
+     
+
+      img{
+        width: 1.8rem;
+        margin-right: 1rem;
+        vertical-align: -3px;
+      }
+}
+.btn-gradient-pink{
+  border-image: var(--gradient-pink);
+  border-image-slice: 1;
+}
+section{
+  padding: 4rem 2rem;
+  background: var(--dark-200);
+}
+html{
+  font-size: 66.7%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  background: var(--dark);
+
+
+
+  &::-webkit-scrollbar{
+      width: .2rem;
+  }
+
+  &::-webkit-scrollbar-track{
+      background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb{
+      background: var(--primary);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+
+  html{
+      font-size: 57%;
+  }
+ .container{
+      padding: 0.5rem 0!important;
+  }
+ .inicio .content{
+      left:50% !important;
+      transform: translate(-50%,-50%) !important;
+}
+
+
+}
+
+@media (max-width:450px){
+  html{
+      font-size: 45%;
+  }
+  
+}
+@media (max-width:680px){
+  html{
+      font-size: 50%;
+  }
+
+
+
+  
+}
