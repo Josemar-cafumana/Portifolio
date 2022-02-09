@@ -8,8 +8,8 @@
               <h3>Desenvolvedor Full-stack</h3>
           </div>
         <div class="botoes my-4">
-              <a href="#" class="btn-gradient-purple me-4"><img alt="logo do linkedin" src="../assets/linkedin.svg"> Linkedin</a>
-              <a href="#"  class="btn-gradient-pink"> <img  alt="logo do github" src="../assets/github.svg"> Github</a>
+              <a href="https://www.linkedin.com/in/josemar-cafumana-web-developer/" target="_blank" class="btn-gradient-purple me-4"><img alt="logo do linkedin" src="../assets/linkedin.svg"> Linkedin</a>
+              <a href="https://github.com/Josemar-cafumana" target="_blank" class="btn-gradient-pink"> <img  alt="logo do github" src="../assets/github.svg"> Github</a>
           </div>
         </div>
     </div>
