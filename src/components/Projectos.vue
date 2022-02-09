@@ -12,7 +12,7 @@
                   <img src="../assets/css.svg" alt="css">
                   <img src="../assets/javascript.svg" alt="javascript">
               </div>
-              <a href="#" class="btn-gradient-purple mt-5">Visualizar</a>
+              <a href="#" class="btn-gradient-purple mt-5"> <img src="../assets/link.svg">Visualizar</a>
             </div>
 </template>
 

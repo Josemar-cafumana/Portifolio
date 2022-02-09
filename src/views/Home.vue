@@ -69,8 +69,8 @@
           <div class="experiencia-info col-md-7 ">
                   <div class="content w-100">
                     <div class="experiencia-info-header d-flex justify-content-between align-items-center mb-3   mb-5">
-                      <h3>Professor conteudista em Frontend</h3>
-                      <p>Nov 2021 - Atual</p>
+                      <h3 >Professor conteudista em Frontend</h3>
+                      <p >Nov 2021 - Atual</p>
                     </div>
                     <div class="experiencia-info-descricao">
                       <h6>Digital House</h6>

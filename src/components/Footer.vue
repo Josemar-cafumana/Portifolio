@@ -13,9 +13,9 @@ export default {
 
 <style lang="scss" scoped>
     footer{
-        padding: 2rem 5rem;
+        padding: 2rem 9rem;
         padding-bottom:.8rem ;
-        background: var(--dark);
+        background: var(--dark) !important;
 
         p{
              font-size: var(--font-size);

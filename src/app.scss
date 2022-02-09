@@ -32,6 +32,7 @@
     grid-template-columns: repeat(auto-fit,minmax($val,1fr));
     gap:2rem;
 }
+
 .btn-gradient-pink
 ,.btn-gradient-purple{
    padding: 1rem 2.5rem;
@@ -63,6 +64,10 @@
   border-image: var(--gradient-pink);
   border-image-slice: 1;
 }
+
+
+
+
 section{
   padding: 5rem 6rem;
   background: var(--dark-200);
@@ -102,7 +107,16 @@ to {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);;}
 
 
 
+@media (max-width:1200px) {
+    .experiencia .experiencia-info .experiencia-info-header{
+      justify-content: center;
+      flex-direction: column;
 
+      p{
+       margin-left: 0 !important;
+      }
+    }
+}
 @media (max-width:991px){
 
   html{
@@ -140,6 +154,9 @@ to {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);;}
   justify-content: center !important;
 }
   section{text-align: center;}
+  h3{
+    margin-left: 0 !important;
+  }
 }
 
 
