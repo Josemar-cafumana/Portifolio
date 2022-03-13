@@ -15,16 +15,19 @@
 
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link "  href="/">Home</a>
+          <a class="nav-link "  href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">Sobre mim</a>
+          <a class="nav-link" href="#about">Sobre mim</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">Experiência</a>
+          <a class="nav-link" href="#skills">Habilidades</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">Projectos</a>
+          <a class="nav-link" href="#projects">Projectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contacto</a>
         </li>
        
       </ul>

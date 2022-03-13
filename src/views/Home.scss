@@ -94,14 +94,46 @@ main{
 
              .experiencia{
                 background:  var(--dark);
+                padding-bottom: 8rem;
                   h3{
                      text-transform: uppercase;
                       font-weight: 600;
                       font-size: var(--font-size-3);
                       color: var(--white);
                       line-height: 29px;
-                      margin: 2rem 0 4rem 5rem;
+                      margin: 2rem 0 4rem 0;
 
+                  }
+                  .skills {
+
+                    .skill-container {
+                      width: 100%;
+                      display: grid;
+                      grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
+                      gap:2rem;
+
+                      .box{
+                        background: var(--dark-200);
+                        padding: 2rem 1rem;
+                        
+                        max-height: 13rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: .5rem;
+
+                          img{
+                            width: 5rem;
+                          }
+                          p{
+                            color: #ddd;
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                            padding-top: 1.4rem;
+                          }
+                      }
+                    }
                   }
                 .menu-experiencia ul  li{
                             color:var(--gray-light);
@@ -165,14 +197,14 @@ main{
 
                     .image{
                             width: 100%;
-                            height: 23rem;
+                            height: 25rem;
                             background: var(--dark-200);
                             border-left: .3rem solid var(--primary);
 
                             img{
                                 width: 100%;
                                 height: 100%;
-                                object-fit: cover;
+                                object-fit: fill;
                               }
                     }
 

@@ -1,6 +1,6 @@
 <template>
  <main class="main">
-    <div class="inicio">
+    <div class="inicio" id="home">
         <div class="content ">
           <div class="text mb-5"> 
               <h3>Olá, eu sou  </h3>
@@ -14,7 +14,7 @@
         </div>
     </div>
     <!-- Seção sobre mim -->
-    <section class="sobre-mim">
+    <section class="sobre-mim" id="about">
         <div class="dados-pessoais">
           <div class="row">
             <div class="image col-md-6 d-flex justify-content-center align-items-center mb-4">
@@ -53,48 +53,132 @@
         </div>
     </section>
 
-    <section class="experiencia px-5">
-      <h3>Experiência</h3>
+    <section class="experiencia px-5 tex-center" id="skills">
+      <h3 class="text-center">Habilidades</h3>
         <div class="row d-flex justify-content-center">
-          <div class="menu-experiencia col-md-4  ">
-              <ul class="list-unstyled">
-                <li>Freelancer</li>
-                <li>Código Fonte TV</li>
-                <li>Zuplae</li>
-                <li>ContWeb</li>
-                <li>iuricode</li>
-                <li>Digital House</li>
-              </ul>
-          </div>
-          <div class="experiencia-info col-md-7 ">
-                  <div class="content w-100">
-                    <div class="experiencia-info-header d-flex justify-content-between align-items-center mb-3   mb-5">
-                      <h3 >Professor conteudista em Frontend</h3>
-                      <p >Nov 2021 - Atual</p>
-                    </div>
-                    <div class="experiencia-info-descricao">
-                      <h6>Digital House</h6>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu purus risus. Ut rutrum sollicitudin purus in accumsan. Proin at mattis metus. Nullam sit amet mauris condimentum, volutpat augue in, mattis urna.
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu purus risus. Ut rutrum sollicitudin purus in accumsan.</p>
-                    </div>
-                  </div>
-          </div>
+      
+        <div class="col-md-6 skills">
+            <div class="skill-container">
+              <div class="box">
+                <img  alt="icone html" src="../assets/skill-1.svg" class="ms-2">
+                <p>HTML</p>
+              </div>
+              <div class="box">
+                <img  alt="icone html" src="../assets/skill-2.svg" class="ms-2">
+                <p>CSS</p>
+              </div>
+              <div class="box">
+                <img  alt="icone html" src="../assets/skill-3.svg" class="ms-2">
+                <p>JS</p>
+              </div>
+              <div class="box">
+                <img  alt="icone html" src="../assets/skill-4.svg" class="ms-2">
+                <p>PHP</p>
+              </div>
+              <div class="box">
+                <img  alt="icone html" src="../assets/skill-5.svg" class="ms-2">
+                <p>MYSQL</p>
+              </div>
+              <div class="box">
+                <img  alt="icone html" src="../assets/skill-6.svg" class="ms-2">
+                <p>LARAVEL</p>
+              </div>
+              <div class="box">
+                <img  alt="icone html" src="../assets/skill-7.svg" class="ms-2">
+                <p>VUEJS</p>
+              </div>
+              <div class="box">
+                <img  alt="icone html" src="../assets/skill-8.svg" class="ms-2">
+                <p>NUXTJS</p>
+              </div>
+            </div>
+        </div>
+      
         </div>
     </section>
 
-    <section class="projectos">
+    <section class="projectos" id="projects"> 
       <h3>Projectos</h3>
       
       <div class="row ">
 
-        <div  class=" box-image col-md-6  d-flex justify-content-center align-items-center my-5" v-for="projecto in projectos" :key="projecto.id">
-           <Projectos :projectos="projecto" />
+        <div  class=" box-image col-md-6  d-flex justify-content-center align-items-center my-5" >
+           
+              <div class="box">
+              <div class="image projecto1">
+                <img  src="../assets/projecto-1.png" alt="">
+              </div>
+              <div class="descricao">
+                  <h3>projecto Anova</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
+              </div>
+              <div class="tecnologias">
+                   <img src="../assets/html.svg" alt="html">
+                  <img src="../assets/css.svg" alt="css">
+                  <img src="../assets/javascript.svg" alt="javascript">
+              </div>
+              <a href="#" class="btn-gradient-purple mt-5"> <img src="../assets/link.svg">Visualizar</a>
+            </div>
+        </div>
+        <div  class=" box-image col-md-6  d-flex justify-content-center align-items-center my-5" >
+           
+              <div class="box">
+              <div class="image projecto1">
+                <img  src="../assets/projecto-2.png" alt="">
+              </div>
+              <div class="descricao">
+                  <h3>projecto Anova</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
+              </div>
+              <div class="tecnologias">
+                   <img src="../assets/html.svg" alt="html">
+                  <img src="../assets/css.svg" alt="css">
+                  <img src="../assets/javascript.svg" alt="javascript">
+              </div>
+              <a href="#" class="btn-gradient-purple mt-5"> <img src="../assets/link.svg">Visualizar</a>
+            </div>
+        </div>
+        <div  class=" box-image col-md-6  d-flex justify-content-center align-items-center my-5" >
+           
+              <div class="box">
+              <div class="image projecto1">
+                <img  src="../assets/projecto-3.png" class="img-fluid" alt="">
+              </div>
+              <div class="descricao">
+                  <h3>projecto Anova</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
+              </div>
+              <div class="tecnologias">
+                   <img src="../assets/html.svg" alt="html">
+                  <img src="../assets/css.svg" alt="css">
+                  <img src="../assets/javascript.svg" alt="javascript">
+              </div>
+              <a href="#" class="btn-gradient-purple mt-5"> <img src="../assets/link.svg">Visualizar</a>
+            </div>
+        </div>
+        <div  class=" box-image col-md-6  d-flex justify-content-center align-items-center my-5" >
+           
+              <div class="box">
+              <div class="image projecto1">
+                <img  src="../assets/projecto-4.png" alt="">
+              </div>
+              <div class="descricao">
+                  <h3>projecto Anova</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
+              </div>
+              <div class="tecnologias">
+                   <img src="../assets/html.svg" alt="html">
+                  <img src="../assets/css.svg" alt="css">
+                  <img src="../assets/javascript.svg" alt="javascript">
+              </div>
+              <a href="#" class="btn-gradient-purple mt-5"> <img src="../assets/link.svg">Visualizar</a>
+            </div>
         </div>
       
       </div>
     </section>
 
-    <section class="contacto">
+    <section class="contacto" id="contact">
             <h3>Entrar em contacto</h3>
             <div class="row">
               <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
@@ -129,7 +213,7 @@
 </template>
 
 <script>
-import Projectos from '@/components/Projectos.vue'
+
 
 export default {
   name: "Home",
@@ -144,7 +228,7 @@ export default {
     }
   },
   components: {
-    Projectos
+
   },
 };
 </script>
