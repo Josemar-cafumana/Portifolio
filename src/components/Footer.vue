@@ -15,7 +15,7 @@ export default {
     footer{
         padding: 2rem 9rem;
         padding-bottom:.8rem ;
-        background: var(--dark) !important;
+        background: var(--dark-200) !important;
 
         p{
              font-size: var(--font-size);

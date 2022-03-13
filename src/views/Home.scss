@@ -198,4 +198,78 @@ main{
             }
 
             }
+            .contacto {
+              background: var(--dark);
+
+                h3{
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  font-size: var(--font-size-3);
+                  color: var(--white);
+                  line-height: 29px;
+                  margin: 2rem 0 5rem 2.5rem;
+              }
+
+              .info {
+                a {
+                  padding:2rem;
+                  border: 1px solid #fff;
+                  border-radius: .5rem;
+                  display: block;
+                  min-width: 30rem;
+                  max-width:40rem;
+                  height: 6rem;
+                  color: #fff;
+                  text-decoration: none;
+                  margin-bottom: 2rem;
+                  font-size: 1.7rem;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+
+                  img {
+                    margin-right: 1.5rem;
+                  }
+                }
+              }
+              form{
+                text-align:left;
+                padding: 3rem;
+                background: var(--dark-200);
+                border-radius: .5rem;
+
+              
+                textarea,input{
+                  border:none;
+                  background:none;
+                  border-bottom: .2rem solid #ddd;
+                  padding: 1rem .5rem;
+                  font-size: 1.6rem;
+                  color: #898989;
+                  transition: all .7s ease-in-out;
+
+               
+
+                  &:focus {
+                    background: none;
+                    box-shadow: none;
+                    outline: none;
+                    border-color: var(--primary) ;
+                    color: #898989;
+                  }
+                }
+                .btn-gradient-purple{
+                  width: 15rem;
+                  padding: 1.2rem 1rem;
+                  padding-left: 2.5rem;
+                  text-align: center;
+                  font-size: 1.6rem;
+                }
+
+            
+
+      
+              }
+            
+            }
    }

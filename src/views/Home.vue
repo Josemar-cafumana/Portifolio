@@ -3,7 +3,7 @@
     <div class="inicio">
         <div class="content ">
           <div class="text mb-5"> 
-              <h3>Olá, eu sou</h3>
+              <h3>Olá, eu sou  </h3>
               <h1>Josemar Cafumana</h1>
               <h3>Desenvolvedor Full-stack</h3>
           </div>
@@ -92,6 +92,37 @@
         </div>
       
       </div>
+    </section>
+
+    <section class="contacto">
+            <h3>Entrar em contacto</h3>
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                <div class="info my-3 ps-md-5">
+                  <a href=""><img  alt="icone email" src="../assets/phone.svg" class="ms-2"> +244 947754715</a>
+                  <a href=""><img  alt="icone email" src="../assets/mail.svg" class="ms-2"> josemarcafumana890@gmail.com</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <form>
+
+                    <div class="mb-5">
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                    </div>
+                    <div class="mb-5">
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                    </div>
+                    <div class="mb-5">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Mensagem</textarea>
+                  </div>
+
+                  <div class="mb-4 mt-5 d-flex justify-content-center ">
+                       <a href="#"  class="btn-gradient-purple d-flex justify-content-center mt-4"> <span>Enviar <img  alt="icone email" src="../assets/send.svg" class="ms-2"></span>  </a>
+                  </div>
+
+                </form>
+              </div>
+            </div>
     </section>
 
  </main>
