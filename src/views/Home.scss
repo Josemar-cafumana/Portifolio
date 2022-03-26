@@ -1,307 +1,278 @@
-main{
+main {
+  .inicio {
+    width: 100%;
+    height: 90vh;
+    background: url('../assets/Background-inicio.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 
-    .inicio{
+    .content {
+      position: absolute;
+      left: 15%;
+      top: 50%;
+      transform: translate(-15%, -50%);
+
+      .text {
+        h1 {
+          font-size: var(--font-size-1);
+          color: var(--primary);
+          font-weight: 600;
+          margin: 1rem 0;
+          line-height: 65px;
+          text-transform: uppercase;
+        }
+        h3 {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: var(--font-size-3);
+          color: var(--white);
+          line-height: 29px;
+        }
+      }
+    }
+  }
+
+  .sobre-mim {
+    background: var(--dark-200);
+
+    .dados-pessoais {
+      .image .image-wrapper {
+        background: var(--dark);
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+        border-left: 0.3rem solid var(--primary);
+
+        img {
           width: 100%;
-          height: 90vh;
-          background:  url('../assets/Background-inicio.png') no-repeat;
-          background-size: cover;
-          background-position: center;
-          position: relative;
-
-          .content{
-            
-              position: absolute;
-              left:15%;
-              top:50%;
-              transform: translate(-15%,-50%);
-
-              .text{
-                    h1{
-                      font-size: var(--font-size-1);
-                      color: var(--primary);
-                      font-weight: 600;
-                      margin: 1rem 0;
-                      line-height: 65px;
-                      text-transform: uppercase;
-                    }
-                    h3{
-                      text-transform: uppercase;
-                      font-weight: 600;
-                      font-size: var(--font-size-3);
-                      color: var(--white);
-                      line-height: 29px;
-                    }
-              }
-             
-          }
-
+          height: 100%;
+          object-fit: cover;
+        }
       }
 
-    .sobre-mim{
-            background: var(--dark-200);
+      .sobre {
+        h3 {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: var(--font-size-3);
+          color: var(--white);
+          line-height: 29px;
+        }
+        .descricao {
+          h4 {
+            font-size: var(--font-size-4);
+            color: var(--white);
+          }
+          p {
+            font-size: var(--font-size);
+            color: var(--gray-light);
+            max-width: 50rem;
+            margin-bottom: 2rem !important;
+          }
+        }
 
-             .dados-pessoais{
+        .redes-sociais {
+          margin: 4rem 0;
 
-                  .image .image-wrapper{
-                    background: var(--dark);
-                    width: 30rem;
-                    height: 30rem;
-                    object-fit: cover;
-                    border-left: .3rem solid var(--primary);
+          img {
+            width: 2.5rem;
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
 
-                    img{
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
-                    }
-            }
+  .experiencia {
+    background: var(--dark);
+    padding-bottom: 8rem;
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: var(--font-size-3);
+      color: var(--white);
+      line-height: 29px;
+      margin: 2rem 0 4rem 0;
+    }
+    .skills {
+      .skill-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: 2rem;
 
-            .sobre{
+        .box {
+          background: var(--dark-200);
+          padding: 2rem 1rem;
 
-                      h3{
-                         text-transform: uppercase;
-                        font-weight: 600;
-                        font-size: var(--font-size-3);
-                        color: var(--white);
-                        line-height: 29px;
-                      }
-                      .descricao {
+          max-height: 13rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0.5rem;
 
-                        h4{
-                          font-size: var(--font-size-4);
-                          color: var(--white);
-                        }
-                        p{
-                          font-size: var(--font-size);
-                          color: var(--gray-light);
-                          max-width: 50rem;
-                          margin-bottom: 2rem !important;
-                        }
+          img {
+            width: 5rem;
+          }
+          p {
+            color: #ddd;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding-top: 1.4rem;
+          }
+        }
+      }
+    }
+    .menu-experiencia ul li {
+      color: var(--gray-light);
+      font-size: 1.9rem !important;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
 
-                      }
+      &:first-child,
+      &:hover {
+        border-left: 0.2rem solid var(--primary);
+      }
+    }
+    .experiencia-info .content {
+      h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: var(--font-size-3);
+        color: var(--white);
+        line-height: 29px;
+        margin: 0 !important;
+      }
+      p {
+        font-size: var(--font-size);
+        color: var(--gray-light);
+        margin-left: auto;
+      }
+    }
+    .experiencia-info-descricao {
+      h6 {
+        color: var(--primary);
+        font-size: var(--font-size);
+        margin-bottom: 4rem;
+      }
+    }
+  }
 
-                      .redes-sociais{
-                          margin:4rem 0;
+  .projectos {
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: var(--font-size-3);
+      color: var(--white);
+      line-height: 29px;
+      margin: 2rem 0 5rem 2.5rem;
+    }
 
-                          img{
-                            width: 2.5rem;
-                            margin-right: 2rem;
-                          }
-                      }
-                  }
-             }
-             }
+    .box-image {
+      margin: 3rem 0 !important;
+      .box {
+        width: 80%;
 
-             .experiencia{
-                background:  var(--dark);
-                padding-bottom: 8rem;
-                  h3{
-                     text-transform: uppercase;
-                      font-weight: 600;
-                      font-size: var(--font-size-3);
-                      color: var(--white);
-                      line-height: 29px;
-                      margin: 2rem 0 4rem 0;
+        .image {
+          width: 100%;
+          max-height: 100%;
+          background: var(--dark-200);
+          border-left: 0.3rem solid var(--primary);
 
-                  }
-                  .skills {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+          }
+        }
 
-                    .skill-container {
-                      width: 100%;
-                      display: grid;
-                      grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
-                      gap:2rem;
+        .descricao {
+          h3 {
+            margin: 3rem 0 3rem 0;
+          }
+          p {
+            font-size: var(--font-size);
+            color: var(--gray-light);
+          }
+        }
+        .tecnologias {
+          margin: 3rem 0;
 
-                      .box{
-                        background: var(--dark-200);
-                        padding: 2rem 1rem;
-                        
-                        max-height: 13rem;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: .5rem;
+          img {
+            width: 3rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .contacto {
+    background: var(--dark);
 
-                          img{
-                            width: 5rem;
-                          }
-                          p{
-                            color: #ddd;
-                            font-size: 1.5rem;
-                            font-weight: 500;
-                            padding-top: 1.4rem;
-                          }
-                      }
-                    }
-                  }
-                .menu-experiencia ul  li{
-                            color:var(--gray-light);
-                            font-size:1.9rem !important;
-                            padding: 1rem 1.5rem;
-                            cursor:pointer;
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: var(--font-size-3);
+      color: var(--white);
+      line-height: 29px;
+      margin: 2rem 0 5rem 2.5rem;
+    }
 
-                            
+    .info {
+      a {
+        padding: 2rem;
+        border: 1px solid #fff;
+        border-radius: 0.5rem;
+        display: block;
+        min-width: 30rem;
+        max-width: 40rem;
+        height: 6rem;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
 
-                            &:first-child,
-                            &:hover{
-                            border-left: .2rem solid var(--primary);
-                            }
-                          
-                }
-              .experiencia-info .content{
-                    h3{
-                      text-transform: uppercase;
-                      font-weight: 600;
-                      font-size: var(--font-size-3);
-                      color: var(--white);
-                      line-height: 29px;
-                      margin: 0 !important;
-                     
-                    }
-                    p{
-                          font-size: var(--font-size);
-                          color: var(--gray-light);
-                          margin-left:auto;
-             
-                    }
-              } 
-              .experiencia-info-descricao{
-                    h6{
-                    color: var(--primary);
-                    font-size: var(--font-size);
-                    margin-bottom: 4rem;
-                    }
-              }
+        img {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+    form {
+      text-align: left;
+      padding: 3rem;
+      background: var(--dark-200);
+      border-radius: 0.5rem;
 
-            }
+      textarea,
+      input {
+        border: none;
+        background: none;
+        border-bottom: 0.2rem solid #ddd;
+        padding: 1rem 0.5rem;
+        font-size: 1.6rem;
+        color: #898989;
+        transition: all 0.7s ease-in-out;
 
-            .projectos{
-
-                h3{
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    font-size: var(--font-size-3);
-                    color: var(--white);
-                    line-height: 29px;
-                    margin: 2rem 0 5rem 2.5rem;
-                }
-
-                .box-image{
-                    margin: 3rem 0 !important;
-                 .box{
-
-                    width: 80%;
-                    
-                    
-
-                    .image{
-                            width: 100%;
-                            max-height: 25rem;
-                            background: var(--dark-200);
-                            border-left: .3rem solid var(--primary);
-
-                            img{
-                                width: 100%;
-                                height: 100%;
-                                object-fit: fill;
-                              }
-                    }
-
-                    .descricao{
-                        h3{
-                          margin: 3rem 0 3rem 0;
-                        }
-                        p{
-                            font-size: var(--font-size);
-                          color: var(--gray-light);
-                        
-                        }
-                    }
-                    .tecnologias{
-                        margin:3rem 0;
-
-                        img{
-                            width: 3rem;
-                            margin-right: 1rem;
-                        }
-                    }
-                }
-            }
-
-            }
-            .contacto {
-              background: var(--dark);
-
-                h3{
-                  text-transform: uppercase;
-                  font-weight: 600;
-                  font-size: var(--font-size-3);
-                  color: var(--white);
-                  line-height: 29px;
-                  margin: 2rem 0 5rem 2.5rem;
-              }
-
-              .info {
-                a {
-                  padding:2rem;
-                  border: 1px solid #fff;
-                  border-radius: .5rem;
-                  display: block;
-                  min-width: 30rem;
-                  max-width:40rem;
-                  height: 6rem;
-                  color: #fff;
-                  text-decoration: none;
-                  margin-bottom: 2rem;
-                  font-size: 1.7rem;
-                  font-weight: 600;
-                  display: flex;
-                  align-items: center;
-
-                  img {
-                    margin-right: 1.5rem;
-                  }
-                }
-              }
-              form{
-                text-align:left;
-                padding: 3rem;
-                background: var(--dark-200);
-                border-radius: .5rem;
-
-              
-                textarea,input{
-                  border:none;
-                  background:none;
-                  border-bottom: .2rem solid #ddd;
-                  padding: 1rem .5rem;
-                  font-size: 1.6rem;
-                  color: #898989;
-                  transition: all .7s ease-in-out;
-
-               
-
-                  &:focus {
-                    background: none;
-                    box-shadow: none;
-                    outline: none;
-                    border-color: var(--primary) ;
-                    color: #898989;
-                  }
-                }
-                .btn-gradient-purple{
-                  width: 15rem;
-                  padding: 1.2rem 1rem;
-                  padding-left: 2.5rem;
-                  text-align: center;
-                  font-size: 1.6rem;
-                }
-
-            
-
-      
-              }
-            
-            }
-   }
+        &:focus {
+          background: none;
+          box-shadow: none;
+          outline: none;
+          border-color: var(--primary);
+          color: #898989;
+        }
+      }
+      .btn-gradient-purple {
+        width: 15rem;
+        padding: 1.2rem 1rem;
+        padding-left: 2.5rem;
+        text-align: center;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
